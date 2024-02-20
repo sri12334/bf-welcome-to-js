@@ -37,17 +37,39 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let text = prompt(_);
+let text = prompt('please entre the text');
 console.log('text:', text);
 
-let query = prompt(_);
+let query = prompt('please entre the query');
 console.log('query:', query);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
+
+if (
+  (text === null && query === null) ||
+  (text === null && query === '') ||
+  (text === '' && query === null)
+) {
+  output = ':(';
+} else if (text === '' && query === '') {
+  output = '"" includes ""';
+} else if ((text === '' && query) || (text && query === '')) {
+  if (text) {
+    output = `"${text}" does include ""`;
+  } else {
+    output = `"" does include "${query}"`;
+  }
+} else if ((text === null && query) || (text && query === null)) {
+  output = ':(';
+} else if (text.toLowerCase().includes(query.toLowerCase())) {
+  output = `"${text}" does include "${query}"`;
+} else {
+  output = `"${text}" does not include "${query}"`;
+}
 
 /* --- alert the result --- */
 

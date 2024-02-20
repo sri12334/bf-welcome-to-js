@@ -40,15 +40,29 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = prompt(_);
+let input = prompt('please entre something');
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
-
+if (input === null) {
+  output = ':(';
+} else if (input === '') {
+  output = 'not even close';
+} else if (input.length < 5) {
+  output = 'better';
+} else if (input.length < 8) {
+  output = 'almost there';
+} else if (input.length < 10) {
+  output = 'so close';
+} else if (input.length > 10) {
+  output = 'too long';
+} else {
+  output = 'perfect!';
+}
 /* --- alert the result --- */
 
 console.log('output:', output);
