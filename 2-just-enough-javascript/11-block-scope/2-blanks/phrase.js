@@ -10,11 +10,11 @@ let phrase = '';
 }
 
 {
-  let word = 'world';
+  word = 'world';
   phrase = phrase + ' ' + word;
 }
 
-console.log(phrase === 'hello world'); // true
+console.log(phrase === 'hello world');
 
 /* distractors:
 
