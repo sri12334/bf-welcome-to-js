@@ -23,3 +23,40 @@
       '0 . x . 0'         -> '0 . X . 0'
 
 */
+let text = ''; // user input goes here
+while (true) {
+  let input = prompt('please enter something :');
+
+  if (input === null) {
+    alert('there is no escape!');
+    continue;
+  }
+  if (input === '') {
+    alert('no empty input, try again.');
+    continue;
+  }
+
+  if (input) {
+    text = input;
+    break;
+  }
+}
+
+let newtext = '';
+let isUpperCase = true;
+
+for (const char of text) {
+  if (!char.match(/[a-zA-Z]/)) {
+    newtext += char; // Ignore non-letter characters
+    continue;
+  }
+
+  if (isUpperCase) {
+    newtext += char.toUpperCase();
+  } else {
+    newtext += char.toLowerCase();
+  }
+  // newtext += isUpperCase ? char.toUpperCase() : char.toLowerCase();
+  isUpperCase = !isUpperCase;
+}
+alert(newtext);

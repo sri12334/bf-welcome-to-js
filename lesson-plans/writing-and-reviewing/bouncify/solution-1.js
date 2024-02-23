@@ -23,3 +23,37 @@
       '0 . x . 0'         -> '0 . X . 0'
 
 */
+let text = '';
+
+while (true) {
+  let input = prompt('please enter something :');
+
+  if (input === null) {
+    alert('there is no escape!');
+    continue;
+  }
+  if (input === '') {
+    alert('no empty input, try again.');
+    continue;
+  }
+
+  if (input) {
+    text = input;
+    break;
+  }
+}
+
+const specials = ' !@#$%^&*()_-+=1234567890"';
+let newtext = '';
+let isUpperCase = true;
+
+for (const char of text) {
+  if (!specials.includes(char)) {
+    newtext += isUpperCase ? char.toUpperCase() : char.toLowerCase();
+
+    isUpperCase = !isUpperCase;
+  } else {
+    newtext += char;
+  }
+}
+alert(newtext);
