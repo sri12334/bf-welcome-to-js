@@ -15,9 +15,16 @@ whenFormDataChanges('input', () => {
 
   // --- mirror the text ---
 
+  let character = readString('character');
+
   let mirrored = ' | ';
+
+  if (character) {
+    mirrored = ' ' + character + ' ';
+  }
+
   for (let char of userText) {
-    mirrored = char + mirrored + char;
+    mirrored = char.toUpperCase() + mirrored + char.toLowerCase();
   }
 
   // --- display the result ---

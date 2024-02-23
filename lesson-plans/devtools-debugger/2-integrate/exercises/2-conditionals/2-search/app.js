@@ -21,7 +21,7 @@ whenFormDataChanges('search-input', () => {
 
   let doesExist = false;
 
-  if (caseSensitive) {
+  if (!caseSensitive) {
     doesExist = searchThis.includes(findThis);
   } else {
     let smallSearchThis = searchThis.toLowerCase();

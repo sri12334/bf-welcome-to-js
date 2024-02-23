@@ -18,7 +18,7 @@ whenFormDataChanges('user-info', () => {
 
   // --- create a message ---
 
-  let greeting = 'Hello ' + name + '!';
+  let greeting = 'Hello ' + name + '!' + '\ngood bye';
 
   // --- display the message ---
 
