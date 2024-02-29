@@ -7,8 +7,6 @@
 
 */
 
-
-
 let flag = false;
 
 while (!flag) {
@@ -19,9 +17,10 @@ alert('you confirmed');
 
 // begin distractors
 
-while (flag) { // distractor
-flag = prompt('you can only leave this loop if you confirm'); // distractor
-flag = alert('you can only leave this loop if you confirm'); // distractor
-
+while (flag) {
+  // distractor
+  flag = prompt('you can only leave this loop if you confirm'); // distractor
+  flag = alert('you can only leave this loop if you confirm'); // distractor
+}
 
 // #todo

@@ -1,35 +1,19 @@
+/* eslint-disable no-unused-expressions */
 // #todo
-
-// prettier-ignore
-{ // so prettier does not remove the extra spacing
-
 
 'use strict';
 
+// prettier-ignore
+{ // so prettier does not remove the extra spacing
+  let name = prompt('what is your name?');
 
-let name = prompt("what is your name?");
+  let greeting = '';
 
-
-let greeting = '';
-
-
-if (name !== null) {
-
-
+  if (name !== null) {
     greeting = 'hello ' + name + '!';
-
-
-} else {
-
-
+  } else {
     greeting = 'no name?!';
+  }
 
-
-}
-
-
-alert(greeting);
-
-
-
+  alert(greeting);
 }
