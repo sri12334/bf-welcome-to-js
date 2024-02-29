@@ -1,5 +1,7 @@
-'use strict';
+/* eslint-disable no-shadow */
+/* eslint-disable sonarjs/no-collapsible-if */
 
+'use strict';
 
 /* parsons-collapse: hint
   1. gather input
@@ -9,8 +11,6 @@
       2. correct
     b. they canceled
 */
-
-
 
 let input = prompt('something longer than 4 characters:');
 
@@ -25,11 +25,13 @@ if (input !== null) {
 }
 
 // -------------------
-
-
-input = prompt('something longer than 4 characters:'); // distractor
-} else if { //distractor
-if (input <= 4) { // distractor
-
-
+{
+  let input = prompt('something longer than 4 characters:'); // distractor
+  if (input !== null) {
+    // distractor
+    if (input <= 4) {
+      // distractor
+    }
+  }
+}
 // #todo

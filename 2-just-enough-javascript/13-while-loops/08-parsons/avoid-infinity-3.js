@@ -11,10 +11,12 @@ while (dots.length < 5) {
 
 
 dots + '.'; // distractor
-while (dots.length !> 5) { // distractor
+while (dots.length !> 5) {
+   // distractor
+   
 while (dots.length !< 5) { // distractor
 } // distractor
-{ // distractor
+} // distractor
 
 
 // #todo

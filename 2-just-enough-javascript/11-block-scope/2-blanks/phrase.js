@@ -10,7 +10,7 @@ let phrase = '';
 }
 
 {
-  word = 'world';
+  let word = 'world';
   phrase = phrase + ' ' + word;
 }
 

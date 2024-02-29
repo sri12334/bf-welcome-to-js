@@ -3,4 +3,8 @@
 let letters = 'abcd';
 
 let index = 0;
-while (__ < __.__) {}
+while (index < letters.length) {
+  index += 1;
+  console.log(index);
+}
+console.log('all done');

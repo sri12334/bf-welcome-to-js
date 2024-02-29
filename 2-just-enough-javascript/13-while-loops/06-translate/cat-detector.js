@@ -35,3 +35,19 @@
 /* --- ? --- */
 
 // alert(message)
+
+let input = null;
+
+while (input === null) {
+  input = prompt('please enter "cat"');
+}
+
+let message = '';
+
+if (input !== 'cat') {
+  message < -'"' + input + '" is not a cat';
+
+  message < -'thank you for the cat';
+}
+
+alert(message);

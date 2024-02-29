@@ -3,9 +3,8 @@
 'use strict';
 
 let loggedIn = false;
-
+let didAgree = confirm('do you agree to our terms of service?');
 while (!loggedIn) {
-  let didAgree = confirm('do you agree to our terms of service?');
   if (didAgree === true) {
     loggedIn = true;
   } else {
